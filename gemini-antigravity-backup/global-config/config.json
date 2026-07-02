@@ -1,0 +1,43 @@
+{
+  "userSettings": {
+    "globalPermissionGrants": {
+      "allow": [
+        "command(git status)",
+        "command(git diff)",
+        "command(git add)",
+        "command(git commit)",
+        "command(git pull)",
+        "read_url(icccna.org)",
+        "command(npm install)",
+        "command(head)",
+        "command(npm run)",
+        "command(ipconfig)",
+        "command(ifconfig)",
+        "command(grep)",
+        "command(awk)",
+        "command(lsof)",
+        "command(sort)",
+        "command(cut)",
+        "command(jq)",
+        "command(which)",
+        "command(yt-dlp)",
+        "read_url(bolls.life)",
+        "command(git remote)",
+        "command(git log)",
+        "command(gh)",
+        "command(git rev-parse)",
+        "command(git init)",
+        "command(brew install)",
+        "command(git branch)",
+        "command(git config)",
+        "command(echo)",
+        "command(cat)",
+        "command(git credential)",
+        "command(find)",
+        "command(basename)",
+        "command(mkdir)",
+        "command(cp)"
+      ]
+    }
+  }
+}

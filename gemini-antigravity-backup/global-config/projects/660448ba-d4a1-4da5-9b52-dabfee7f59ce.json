@@ -1,0 +1,27 @@
+{
+  "id": "660448ba-d4a1-4da5-9b52-dabfee7f59ce",
+  "name": "alpaca-ai-bot",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///Users/chills/.gemini/antigravity/scratch/alpaca-ai-bot",
+          "defaultBranch": "main",
+          "allowWrite": true
+        }
+      }
+    ]
+  },
+  "permissionGrants": {
+    "permissionGrants": {
+      "allow": [
+        "read_url(chills-yeah-ai-trader-backend.onrender.com)"
+      ]
+    }
+  },
+  "settings": {
+    "fileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+    "autoExecutionPolicy": "CASCADE_COMMANDS_AUTO_EXECUTION_EAGER",
+    "artifactReviewMode": "ARTIFACT_REVIEW_MODE_TURBO"
+  }
+}

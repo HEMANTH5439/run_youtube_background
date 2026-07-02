@@ -1,0 +1,18 @@
+{
+  "id": "d23325f6-208b-4bb2-b6a9-846d90aa6711",
+  "name": "Comic AI",
+  "projectResources": {},
+  "permissionGrants": {
+    "permissionGrants": {
+      "allow": [
+        "command(npx)"
+      ]
+    }
+  },
+  "settings": {
+    "fileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+    "internetPolicy": "AGENT_SETTING_POLICY_ASK",
+    "autoExecutionPolicy": "CASCADE_COMMANDS_AUTO_EXECUTION_EAGER",
+    "artifactReviewMode": "ARTIFACT_REVIEW_MODE_TURBO"
+  }
+}

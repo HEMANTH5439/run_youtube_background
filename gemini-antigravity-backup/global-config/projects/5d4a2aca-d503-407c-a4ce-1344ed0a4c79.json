@@ -1,0 +1,20 @@
+{
+  "id":  "5d4a2aca-d503-407c-a4ce-1344ed0a4c79",
+  "name":  "the-way-back",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///Users/chills/the-way-back",
+          "defaultBranch":  "main",
+          "allowWrite":  true
+        }
+      }
+    ]
+  },
+  "settings":  {
+    "fileAccessPolicy":  "AGENT_SETTING_POLICY_ALLOW",
+    "autoExecutionPolicy":  "CASCADE_COMMANDS_AUTO_EXECUTION_EAGER",
+    "artifactReviewMode":  "ARTIFACT_REVIEW_MODE_TURBO"
+  }
+}
