@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Background Audio & YouTube Tester</title>
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-sphere glow-1"></div>
+    <div class="glow-sphere glow-2"></div>
+  </div>
+
+  <main class="app-container">
+    <header class="app-header">
+      <div class="badge">PROTOTYPE TESTER</div>
+      <h1>BG Media Lab</h1>
+      <p>Test background & lock-screen audio behavior on mobile browsers.</p>
+    </header>
+
+    <!-- CARD 1: YOUTUBE PLAYER TESTER -->
+    <section class="test-card" id="card-youtube">
+      <div class="card-header">
+        <span class="icon">󰗃</span>
+        <h2>YouTube Player</h2>
+      </div>
+      
+      <div class="input-group">
+        <label for="yt-video-id">YouTube Video URL</label>
+        <div class="input-row">
+          <input type="text" id="yt-video-id" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ" placeholder="Paste YouTube Video URL here">
+          <button id="btn-load-yt" class="btn-primary">Load</button>
+        </div>
+      </div>
+
+      <!-- YouTube iframe hidden wrapper, or visible small size for PiP -->
+      <div class="video-preview-wrapper">
+        <div id="youtube-player"></div>
+      </div>
+
+      <div class="player-controls">
+        <button id="btn-play-yt" class="btn-control" disabled>Play (IFrame)</button>
+        <button id="btn-pause-yt" class="btn-control" disabled>Pause</button>
+        <button id="btn-pip-yt" class="btn-control btn-accent" disabled>PiP</button>
+        <button id="btn-stream-yt" class="btn-control btn-success" disabled>Play Natively (Auto-Background)</button>
+      </div>
+
+      <div class="card-footer-info">
+        <p>💡 <strong>iOS/Android Note:</strong> YouTube videos normally pause when backgrounded. Try entering <strong>PiP mode</strong> first, or locking the device and clicking "Play" on your lock screen controls.</p>
+      </div>
+    </section>
+
+    <!-- CARD 2: NATIVE HTML5 AUDIO TESTER -->
+    <section class="test-card" id="card-audio">
+      <div class="card-header">
+        <span class="icon">󰎈</span>
+        <h2>Native HTML5 Audio</h2>
+      </div>
+
+      <div class="track-info">
+        <div class="album-art-placeholder">
+          <span>🎵</span>
+        </div>
+        <div class="track-details">
+          <h3 id="native-track-title">Cyber Lounge (Royalty Free)</h3>
+          <p id="native-track-artist">Lofi Producer</p>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button id="btn-play-audio" class="btn-control btn-success">Play Native Audio</button>
+        <button id="btn-pause-audio" class="btn-control" disabled>Pause</button>
+      </div>
+
+      <div class="card-footer-info">
+        <p>💡 <strong>Native Audio Note:</strong> Standard audio elements combined with the Media Session API have much higher background tolerance. Lock your device and check your lock screen controls!</p>
+      </div>
+    </section>
+
+    <!-- CARD 3: MEDIA SESSION & SYSTEM STATE -->
+    <section class="test-card" id="card-status">
+      <div class="card-header">
+        <span class="icon">󰒍</span>
+        <h2>Active Media Session</h2>
+      </div>
+      
+      <div class="status-grid">
+        <div class="status-item">
+          <span class="status-label">Title</span>
+          <span class="status-value" id="session-title">None</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Artist</span>
+          <span class="status-value" id="session-artist">None</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Playback State</span>
+          <span class="status-value highlight" id="session-state">paused</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Visibility State</span>
+          <span class="status-value highlight-blue" id="visibility-state">visible</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD 4: REAL-TIME CONSOLE LOGGER -->
+    <section class="test-card" id="card-logs">
+      <div class="card-header">
+        <span class="icon">󰞷</span>
+        <h2>Background Event Logger</h2>
+        <button id="btn-clear-logs" class="btn-text">Clear</button>
+      </div>
+      <div class="log-console" id="log-console">
+        <div class="log-entry system">App initialized. Ready to test.</div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js?v=11"></script>
+</body>
+</html>
